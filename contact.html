@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Seaside Serenity Bed & Breakfast</Title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img class="logo" src="resources/seaside-serenity-bed-breakfast-.png" alt="Business Logo">
+                <nav class="navbar" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="localevents.html">Local Events & Attractions</a></li>
+                        <li><a href="amenities.html">Amenities & Services</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="alert" aria-live="polite">
+            <h3><a href="booking.html">Important Update: Book your stay with us this summer and enjoy 15% off all room reservations! Use promo code SUMMMER15 at checkout. Hurry, offer ends soon!</a></h3>
+        </div>
+        <h1 class="contact-form-message">If you have any questions, comments, concerns or
+            requests not related to booking please fill out the form below, and we will reach
+            out to you within 24-48 hours.
+        </h1>
+
+        <form action="/submit-form" method="POST">
+            <label for='name'>First & Last Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <fieldset>
+                <legend><strong>Did you have an issue related to your stay?</strong></legend>
+                <input type="radio" id="yes" name="issue" value="yes" required>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="issue" value="no">
+                <label for="no">No</label>
+                <label for="occurence-date">Date Of Occurence:</label>
+                <input type="date" id="occurence-date" name="occurence-date">
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Preferred Contact Method:</strong></legend>
+                <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+                <label for="phone">Phone</label>
+                <input type="radio" id="contact-email" name="contact-method" value="email">
+                <label for="email">Email</label>
+            </fieldset>
+
+
+            <label for="message">Notes/Comments/Requests:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <footer>
+            <div class="contactinfo">
+                <a href="https://www.facebook.com/" aria-label="Facebook"><img src="./resources/facebook-icon-logo-AEF3A8F447-seeklogo.com.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/" aria-label="Instagram"><img src="./resources/87390.png" alt="instagram"></a>
+                <a href="https://www.twitter.com/" aria-label="Twitter"><img src="./resources/twitter-x-logo-101c7d2420-seeklogocom.png" alt="twitter"></a>
+                <h3>Phone:<a href="tel:+1234567890">123-456-7890</a></h3>
+                <h3>Email:<a href="mailto:CustomerService@SerenitySeasideBNB.com">CustomerService@SerenitySeasideBNB.com</a></h3>
+            </div>
+        </footer>
+    </body> 
+</html>  

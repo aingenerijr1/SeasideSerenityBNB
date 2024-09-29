@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Seaside Serenity Bed & Breakfast</Title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img class="logo" src="resources/seaside-serenity-bed-breakfast-.png" alt="Business Logo">
+                <nav class="navbar" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="localevents.html">Local Events & Attractions</a></li>
+                        <li><a href="amenities.html">Amenities & Services</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="alert">
+            <h3>Important Update: Book your stay with us this summer and enjoy 15% off all room reservations! Use promo code SUMMMER15 at checkout. Hurry, offer ends soon!</h3>
+        </div>
+        <h1 class="booking-form-message">Fill out our booking contact information form and one of our friendly and attentive staff will reach out to you to help you book your perfect seaside getaway!</h1>
+
+        <form action="/submit-form" method="POST">
+            <label for='name'>First & Last Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="start-date">Booking Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <label for="end-date">Booking End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+            
+            <fieldset>
+                <legend><strong>Preferred Contact Method</strong></legend>
+                <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+                <label for="phone">Phone</label>
+                <input type="radio" id="contact-email" name="contact-method" value="email">
+                <label for="email">Email</label>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Are You Celebrating A Special Occasion?</strong></legend>
+                <input type="radio" id="anniversary" name="special-occasion" value="anniversary" required>
+                <label for="anniversary">Anniversary</label>
+                <input type="radio" id="birthday" name="special-occasion" value="birthday">
+                <label for="birthday">Birthday</label>
+                <input type="radio" id="graduation" name="special-occasion" value="graduation">
+                <label for="graduation">Graduation</label>
+                <input type="radio" id="life-event" name="special-occasion" value="life-event">
+                <label for="life-event">Life Event</label>
+                <input type="radio" id="other" name="special-occasion" value="other">
+                <label for="other">Other</label>
+                <input type="radio" id="none" name="special-occasion" value="none">
+                <label for="none">None</label>
+            </fieldset>
+
+            <label for="message">Notes:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <footer>
+            <div class="contactinfo">
+                <a href="https://www.facebook.com/" aria-label="Facebook"><img src="./resources/facebook-icon-logo-AEF3A8F447-seeklogo.com.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/" aria-label="Instagram"><img src="./resources/87390.png" alt="instagram"></a>
+                <a href="https://www.twitter.com/" aria-label="Twitter"><img src="./resources/twitter-x-logo-101c7d2420-seeklogocom.png" alt="twitter"></a>
+                <h3>Phone:<a href="tel:+1234567890">123-456-7890</a></h3>
+                <h3>Email:<a href="mailto:CustomerService@SerenitySeasideBNB.com">CustomerService@SerenitySeasideBNB.com</a></h3>
+            </div>
+        </footer>
+    </body> 
+</html>  
